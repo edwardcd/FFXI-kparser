@@ -221,6 +221,15 @@ namespace WaywardGamers.KParser
                         //(nextChar == 0x2019)) // Assault time limit, byte=0x92
                         if ((nextByte == 0x79) || (nextByte == 0x7f) || (nextByte == 0x8d) || (nextByte == 0x3f) || (nextByte == 0x92))
                             skipByte = true;
+
+                        //Lua TimeStamp
+                        if (nextByte == 0xc9)
+                            skipByte = true;
+
+                        //Ashita TimeStamp
+                        if (nextByte == 0xc8)
+                            skipByte = true;
+
                         break;
                     case 0x3f:
                     case 0xef:
@@ -253,6 +262,11 @@ namespace WaywardGamers.KParser
                         // be considered skippable.
                         else if (srcIndex < 66)
                             skipByte = true;
+
+                        //SE TimeStamp
+                        if (nextByte == 0x6a)
+                            skipByte = true;
+
                         break;
                     case 0x81:
                         // Possible extra bit of code in the break area between the headers and the text.
@@ -262,6 +276,10 @@ namespace WaywardGamers.KParser
                     case 0x7f:
                         // Final bytes (optional) in the message
                         if ((nextByte == 0x31) && ((srcIndex + 2) == chatBytes.Length))
+                            skipByte = true;
+                        if (nextByte == 0xfc)
+                            skipByte = true;
+                        if (nextByte == 0xfb)
                             skipByte = true;
                         break;
                     default:

@@ -26,7 +26,7 @@ namespace WaywardGamers.KParser.Plugin
         bool translateActive = false;
 
         int[] indexesOfAssignedLines = new int[0];
-        Regex lineTimestamp = new Regex(@"^\[\d{1,2}:\d\d:\d\d( (AM|PM))?] (?<remainder>.*)$");
+        Regex lineTimestamp = new Regex(@"^(\[)?\d{1,2}:\d\d(:\d\d)?( (AM|PM))?(\])? (?<remainder>.*)$");
 
         #endregion
 

@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -96,9 +97,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Combat.resx</DependentUpon>
     </Compile>
-    <Compile Include="Defense2Plugin.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Defense2Plugin.cs" />
     <Compile Include="DefenseFrequency.cs">
       <SubType>UserControl</SubType>
     </Compile>

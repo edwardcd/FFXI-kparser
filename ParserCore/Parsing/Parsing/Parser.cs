@@ -707,6 +707,10 @@ namespace WaywardGamers.KParser.Parsing
                 case 0x0f: // Others emote
                     message.ChatDetails.ChatMessageType = ChatMessageType.Emote;
                     break;
+                case 0xd5: // <me> linkshell2
+                case 0xd6: // Others linkshell2
+                    message.ChatDetails.ChatMessageType = ChatMessageType.Linkshell;
+                    break;
                 default:
                     message.ChatDetails.ChatMessageType = ChatMessageType.Unknown;
                     break;
@@ -738,6 +742,8 @@ namespace WaywardGamers.KParser.Parsing
                 case 0x8e: // <npc> shout
                     message.ChatDetails.ChatSpeakerType = SpeakerType.NPC;
                     break;
+                case 0xd5: // <me> linkshell2
+                case 0xd6: // Others linkshell2
                 default:
                     message.ChatDetails.ChatSpeakerType = SpeakerType.Unknown;
                     break;

@@ -59,8 +59,8 @@ namespace WaywardGamers.KParser
         #endregion
 
         #region Plugin corrections
-        internal static readonly Regex TimestampPlugin =
-            new Regex(@"^\x1e(\x3f|\xfa|\xfc)\[(?<time>\d{2}:\d{2}:\d{2}(\s?\w{2})?)\] \x1e\x01(?<remainder>.*)$");
+        //internal static readonly Regex TimestampPlugin =
+            //new Regex(@"^\x1e(\x3f|\xfa|\xfc)\[(?<time>\d{2}:\d{2}:\d{2}(\s?\w{2})?)\] \x1e\x01(?<remainder>.*)$");
         #endregion
 
         #region Chat name extractions
@@ -71,7 +71,7 @@ namespace WaywardGamers.KParser
         internal static readonly Regex ChatTellTo    = new Regex(string.Format("^>>{0} (.+)$", playername));
         internal static readonly Regex ChatShout     = new Regex(string.Format("^{0} : (.+)$", playername));
         internal static readonly Regex ChatYell      = new Regex(string.Format("^{0}\\[\\w+\\]: (.+)$", playername));
-        internal static readonly Regex ChatLinkshell = new Regex(string.Format("^<{0}> (.+)$", playername));
+        internal static readonly Regex ChatLinkshell = new Regex(string.Format("^\\[(1)?(2)?\\]<(\x7f\xfc)?{0}(\x7f\xfb)?> (.+)$", playername));
         internal static readonly Regex ChatEmote     = new Regex(string.Format("^{0}('s)? (.+)$", playername));
         internal static readonly Regex ChatNPC       = new Regex(string.Format("^{0} : (.+)$", npcName));
         #endregion
@@ -329,7 +329,7 @@ namespace WaywardGamers.KParser
             ChatTellFrom = new Regex(string.Format("^{0}>> (.+)$", playername));
             ChatTellTo   = new Regex(string.Format("^>>{0} (.+)$", playername));
             ChatShout    = new Regex(string.Format("^{0} : (.+)$", playername));
-            ChatLinkshell = new Regex(string.Format("^<{0}> (.+)$", playername));
+            ChatLinkshell = new Regex(string.Format("^\\[(1)?(2)?\\]<{0}> (.+)$", playername));
             ChatEmote    = new Regex(string.Format("^{0}('s)? (.+)$", playername));
             ChatNPC      = new Regex(string.Format("^{0} : (.+)$", npcName));
             #endregion
@@ -535,7 +535,7 @@ namespace WaywardGamers.KParser
             ChatTellFrom  = new Regex(string.Format("^{0}>> (.+)$", playername));
             ChatTellTo    = new Regex(string.Format("^>>{0} : (.+)$", playername));
             ChatShout     = new Regex(string.Format("^{0} : (.+)$", playername));
-            ChatLinkshell = new Regex(string.Format("^<{0}> (.+)$", playername));
+            ChatLinkshell = new Regex(string.Format("^\\[(1)?(2)?\\]<{0}> (.+)$", playername));
             ChatEmote     = new Regex(string.Format("^{0} (.+)$", playername));
             ChatNPC       = new Regex(string.Format("^{0} : (.+)$", npcName));
             #endregion
@@ -738,7 +738,7 @@ namespace WaywardGamers.KParser
             ChatTellFrom = new Regex(string.Format("^{0}>> (.+)$", playername));
             ChatTellTo   = new Regex(string.Format("^>>{0} : (.+)$", playername));
             ChatShout    = new Regex(string.Format("^{0} : (.+)$", playername));
-            ChatLinkshell = new Regex(string.Format("^<{0}> (.+)$", playername));
+            ChatLinkshell = new Regex(string.Format("^\\[(1)?(2)?\\]<{0}> (.+)$", playername));
             ChatEmote    = new Regex(string.Format("^{0} (.+)$", playername));
             ChatNPC      = new Regex(string.Format("^{0} : (.+)$", npcName));
             #endregion
@@ -920,8 +920,8 @@ namespace WaywardGamers.KParser
         #endregion
 
         #region Plugin corrections
-        internal static Regex TimestampPlugin =
-            new Regex(@"^\x1e(\x3f|\xfa|\xfc)\[(?<time>\d{2}:\d{2}:\d{2})\] \x1e\x01(?<remainder>.*)$");
+        //internal static Regex TimestampPlugin =
+            //new Regex(@"^\x1e(\x3f|\xfa|\xfc)\[(?<time>\d{2}:\d{2}:\d{2})\] \x1e\x01(?<remainder>.*)$");
         #endregion
 
         #endregion
