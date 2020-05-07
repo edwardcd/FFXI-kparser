@@ -3,7 +3,7 @@ Automatically exported from code.google.com/p/kparser
 
 Hotfixed kparser for use with EdenXI FFXI classic era server
 
-#requirements
+# requirements
 
 Microsoft .NET 4.0
 
