@@ -7,7 +7,7 @@ Hotfixed kparser for use with EdenXI FFXI classic era server
 
 Microsoft .NET 4.0
 
-Microsoft SQL Server Compact 3.5
+Microsoft SQL Server Compact 4.0
 
 # setup
 
@@ -24,4 +24,4 @@ VS 10  (minimum)
 
 VS 2019 community (recommended)
 
-Microsoft SQL Server Compact 3.5
+Microsoft SQL Server Compact 4.0
