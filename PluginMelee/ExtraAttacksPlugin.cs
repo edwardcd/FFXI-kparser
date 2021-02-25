@@ -1385,6 +1385,7 @@ namespace WaywardGamers.KParser.Plugin
 
 
                     if (false)
+#pragma warning disable 162
                     {
                         // determine the timespans that indicate a division between rounds vs
                         // double attacks
@@ -1419,6 +1420,7 @@ namespace WaywardGamers.KParser.Plugin
                                 i => i.Timestamp, TimeSpan.FromSeconds(1.625));
                         }
                     }
+#pragma warning restore 162
 
 
                     if (timestampedAttackGroups != null)
