@@ -366,7 +366,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestAllyHitMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -379,7 +379,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobHitAlly()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -392,7 +392,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestOtherHitMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -404,7 +404,7 @@ namespace WaywardGamers.KParser
             Assert.That(msg.MessageCategory, Is.EqualTo(MessageCategoryType.Chat));
         }
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobHitOther()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -419,7 +419,7 @@ namespace WaywardGamers.KParser
 
         #region Combat parsing - Range hits
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerRHitMob()
         {
             string chatText = "19,e4,98,80c08080,000027e1,00002e27,004c,00,01,02,00,Motenten's ranged attack hits the Greater Colibri for 247 points of damage.1";
@@ -455,7 +455,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRHitPlayer()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -503,7 +503,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRHitParty()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -516,7 +516,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestAllyRHitMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -529,7 +529,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRHitAlly()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -542,7 +542,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestOtherRHitMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -555,7 +555,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRHitOther()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -710,7 +710,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestAllyMissMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -723,7 +723,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobMissAlly()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -736,7 +736,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestOtherMissMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -749,7 +749,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobMissOther()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -791,7 +791,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRMissPlayer()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -830,7 +830,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRMissParty()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -843,7 +843,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestAllyRMissMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -856,7 +856,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRMissAlly()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -869,7 +869,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestOtherRMissMob()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -882,7 +882,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobRMissOther()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1002,7 +1002,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobParry()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1155,7 +1155,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobCounterAlly()
         {
             string chatText = "20,00,00,80c08080,000010df,00001338,0068,00,01,02,00,Disintegration's attack is countered by the Hilltroll Monk. Disintegration takes 71 points of damage.1";
@@ -1168,7 +1168,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobCounterOther()
         {
             string chatText = "20,00,00,80c08080,000010df,00001338,0068,00,01,02,00,Disintegration's attack is countered by the Hilltroll Monk. Disintegration takes 71 points of damage.1";
@@ -1181,7 +1181,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerCounterBlink()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1194,7 +1194,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestMobCounterBlink()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1242,7 +1242,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerRetaliateHit()
         {
             string chatText = "19,ac,9d,80c08080,00000961,00000a83,0045,00,01,02,00,Midas retaliates. The Hilltroll Paladin takes 52 points of damage.1";
@@ -1290,7 +1290,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerRetaliateMiss()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1303,7 +1303,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPartyRetaliateMiss()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1316,7 +1316,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerRetaliateBlink()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
@@ -1329,7 +1329,7 @@ namespace WaywardGamers.KParser
         }
 
         [Test]
-        [Ignore]
+        [Ignore("legacy")]
         public void TestPlayerRetaliateCounter()
         {
             string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
