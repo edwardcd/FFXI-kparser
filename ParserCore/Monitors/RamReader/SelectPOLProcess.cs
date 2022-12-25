@@ -57,7 +57,7 @@ namespace WaywardGamers.KParser.Monitoring
         {
             processList.Items.Clear();
 
-            polProcesses = Process.GetProcessesByName("edenxi");
+            polProcesses = Process.GetProcessesByName("horizon-loader");
 
             ok.Enabled = (polProcesses.Length > 0);
 
