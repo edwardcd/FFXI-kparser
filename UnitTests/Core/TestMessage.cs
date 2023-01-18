@@ -67,7 +67,7 @@ namespace WaywardGamers.KParser.Messages
         [Test]
         public void TestAddMessageLine()
         {
-            string chatText = "94,02,00,80808080,00000010,00000010,0033,00,01,00,00,Obtained key item: Healer's attire claim slip.1";
+            string chatText = "8e,02,00,80808080,0000213b,000025e4,0036,00,01,01,00,00000000,016b54e8,00000000,5b1dd6da,37641888,000003d1,0137bf4c,001e075f,00000000,00,Q[15:59:13] Obtained key item: Mea gate crystal.1";
 
             DateTime timestamp = DateTime.Now;
             ChatLine chatLine = new ChatLine(chatText, timestamp);
@@ -79,29 +79,29 @@ namespace WaywardGamers.KParser.Messages
 
             Assert.That(msg.Timestamp, Is.EqualTo(timestamp));
 
-            Assert.That(msg.MessageCategory, Is.EqualTo(MessageCategoryType.System));
-            Assert.That(msg.MessageID, Is.EqualTo(0x10));
-            Assert.That(msg.MessageCode, Is.EqualTo(0x94));
+            Assert.That(msg.MessageCategory, Is.EqualTo(MessageCategoryType.Chat)); // Horizon KI is MC Chat
+            Assert.That(msg.MessageID, Is.EqualTo(0x213b));
+            Assert.That(msg.MessageCode, Is.EqualTo(0x8e));
             Assert.That(msg.ExtraCode1, Is.EqualTo(0x02));
             Assert.That(msg.ExtraCode2, Is.EqualTo(0x00));
 
             Assert.That(msg.PreviousMessageText, Is.Empty);
-            Assert.That(msg.CurrentMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
-            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
+            Assert.That(msg.CurrentMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
+            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
 
             msg.SetParseSuccess(false);
 
             Assert.That(msg.IsParseSuccessful, Is.False);
             Assert.That(msg.PreviousMessageText, Is.Empty);
-            Assert.That(msg.CurrentMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
-            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
+            Assert.That(msg.CurrentMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
+            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
 
             msg.SetParseSuccess(true);
 
             Assert.That(msg.IsParseSuccessful, Is.True);
-            Assert.That(msg.PreviousMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
+            Assert.That(msg.PreviousMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
             Assert.That(msg.CurrentMessageText, Is.Empty);
-            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Healer's attire claim slip."));
+            Assert.That(msg.CompleteMessageText, Is.EqualTo("Obtained key item: Mea gate crystal."));
         }
 
         [Test]
