@@ -24,13 +24,13 @@ Due to the launcher name differences, the KParser binaries are not compatible be
 Retail is not supported, but could you make an issue if you want to contribute?
 
 Chat Log in RAM memory - Offset (update for your FFXI version)
-<img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/0061D140.png">
+<p><img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/0061D140.png"></p>
 
 File > Begin Default Parse ...
-<img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/BeginDefaultParse.png">
+<p><img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/BeginDefaultParse.png"></p>
 
 Select POL Process, then press OK
-<img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/SelectProcess.png">
+<p><img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/SelectProcess.png"></p>
 
 # how to build
 Must have Windows SDK Installed
