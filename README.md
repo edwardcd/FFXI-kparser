@@ -23,11 +23,11 @@ HorizonXI `62b1c8`
 Due to the launcher name differences, the KParser binaries are not compatible between different private servers. 
 Retail is not supported, but could you make an issue if you want to contribute?
 
-https://github.com/AirSkyBoat/AirSkyBoat/blob/staging/res/ASB_logo_circle.png
+<img src="https://github.com/AirSkyBoat/AirSkyBoat/blob/staging/res/ASB_logo_circle.png">
 
-https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/BeginDefaultParse.png
+<img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/BeginDefaultParse.png">
 
-https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/SelectProcess.png
+<img src="https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/SelectProcess.png">
 
 # how to build
 Must have Windows SDK Installed
