@@ -23,9 +23,9 @@ HorizonXI `62b1c8`
 Due to the launcher name differences, the KParser binaries are not compatible between different private servers. 
 Retail is not supported, but could you make an issue if you want to contribute?
 
-![Image of Yaktocat](https://i.imgur.com/kHMSsvK.png)
-![Image of Yaktocat](https://i.imgur.com/H8lARz7.png)
-![Image of Yaktocat](https://i.imgur.com/UUXI8Z2.png)
+![Settings Offset]([https://i.imgur.com/kHMSsvK.png](https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/0061D140.png))
+![Begin Default Parse]([https://i.imgur.com/H8lARz7.png](https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/BeginDefaultParse.png))
+![Select POL Instance]([https://i.imgur.com/UUXI8Z2.png](https://github.com/edwardcd/FFXI-kparser/blob/master/Documentation/SelectProcess.png))
 
 # how to build
 Must have Windows SDK Installed
